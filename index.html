@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9f6ed">
+  <meta name="description" content="한주영 강사의 그림책 환경교육, AI리터러시, 생성형 AI 활용교육을 소개합니다. 유아·초등학생·가족·시니어를 위한 참여형 교육 프로그램과 강의 문의를 확인하세요.">
+  <title>한주영 강사 | 그림책과 AI로 여는 참여형 배움</title>
+  <style>
+    :root{--cream:#f9f6ed;--paper:#fffdf7;--deep:#173c2c;--green:#2f6948;--sage:#e8eee0;--leaf:#a9c293;--ink:#263b30;--muted:#64746a;--line:#d9e0d3;--orange:#d9a869;--shadow:0 22px 60px rgba(29,64,42,.09)}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:92px}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;font-size:17px;line-height:1.75;word-break:keep-all}
+    a{color:inherit;text-decoration:none}
+    button,input,select,textarea{font:inherit}
+    button{cursor:pointer}
+    img,svg{max-width:100%}
+    :focus-visible{outline:3px solid #bd7c32;outline-offset:4px}
+    .skip{position:absolute;left:1rem;top:-5rem;z-index:100;background:#fff;padding:.5rem 1rem}
+    .skip:focus{top:1rem}
+    .container{width:min(1180px,calc(100% - 48px));margin-inline:auto}
+    .section{padding:112px 0}
+    .section-head{margin-bottom:42px}
+    .eyebrow{display:inline-flex;align-items:center;gap:11px;margin:0 0 18px;color:var(--green);font-size:.8rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:25px;height:1px;background:currentColor}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{line-height:1.25;letter-spacing:-.055em}
+    h1{font-size:clamp(2.75rem,5.2vw,5.55rem);font-weight:800}
+    h2{font-size:clamp(2.2rem,3.8vw,3.75rem);font-weight:800}
+    h3{font-size:1.45rem;font-weight:800}
+    .lead{font-size:clamp(1.04rem,1.6vw,1.2rem);color:#53665a;line-height:1.9}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:26px;min-height:58px;padding:14px 25px;border:1px solid var(--deep);border-radius:100px;background:var(--deep);color:white;font-weight:750;line-height:1.3;transition:transform .18s ease,background .18s ease,box-shadow .18s ease}
+    .button:hover{transform:translateY(-2px);background:#28553e;box-shadow:0 9px 18px rgba(23,60,44,.18)}
+    .button.light{border-color:var(--line);background:transparent;color:var(--deep)}
+    .button.light:hover{background:#eaf0e6}
+    .button .arrow{font-size:1.25rem;font-weight:400;line-height:1}
+    .site-header{position:sticky;top:0;z-index:40;border-bottom:1px solid rgba(39,72,50,.1);background:rgba(249,246,237,.96);backdrop-filter:blur(15px)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;gap:25px;min-height:78px}
+    .brand{display:flex;align-items:center;gap:11px;flex:none;color:var(--deep);font-size:1.35rem;font-weight:850;letter-spacing:-.05em;white-space:nowrap}
+    .brand-mark{display:grid;place-items:center;width:37px;height:37px;border:1.5px solid var(--green);border-radius:50%;font-size:1.17rem;font-family:Georgia,serif;line-height:1}
+    .brand small{display:block;margin-top:-6px;color:var(--green);font-size:.56rem;font-weight:700;letter-spacing:.17em}
+    .nav{display:flex;align-items:center;gap:clamp(13px,2vw,28px)}
+    .nav a:not(.nav-cta){font-size:.91rem;font-weight:700;white-space:nowrap}
+    .nav a:not(.nav-cta):hover{color:var(--green)}
+    .nav-cta{padding:10px 19px;border-radius:40px;background:var(--deep);color:#fff;font-size:.88rem;font-weight:750;white-space:nowrap}
+    .menu-toggle{display:none;align-items:center;justify-content:center;width:45px;height:45px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--deep);font-size:1.4rem}
+    .hero{position:relative;overflow:hidden;padding:88px 0 94px}
+    .hero::before{content:"";position:absolute;inset:0 auto auto 53%;width:660px;height:660px;border-radius:50%;background:radial-gradient(circle,#e4ecdc 0%,rgba(228,236,220,0) 68%);pointer-events:none}
+    .hero-grid{position:relative;display:grid;grid-template-columns:1.06fr .94fr;align-items:center;gap:45px}
+    .hero-copy{padding:10px 0}
+    .hero h1{margin-bottom:27px}
+    .hero h1 em,.accent{color:var(--green);font-style:normal}
+    .hero .lead{max-width:610px;margin-bottom:33px}
+    .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+    .hero-meta{display:flex;align-items:center;gap:17px;margin-top:42px;color:var(--muted);font-size:.86rem;font-weight:650}
+    .hero-meta span+span::before{content:"";display:inline-block;width:4px;height:4px;margin:0 17px 3px 0;border-radius:50%;background:var(--leaf)}
+    .art-panel{position:relative;display:grid;place-items:center;min-height:525px;border:1px solid #dfe6d8;border-radius:300px 300px 25px 25px;background:linear-gradient(145deg,#f3f4e9 0%,#e6ecdc 58%,#f5eada 100%);box-shadow:var(--shadow);overflow:hidden}
+    .art-panel::before,.art-panel::after{content:"";position:absolute;border:1px solid rgba(71,116,79,.16);border-radius:50%;pointer-events:none}
+    .art-panel::before{width:530px;height:530px;top:18px;right:-30px}
+    .art-panel::after{width:400px;height:400px;top:85px;right:35px}
+    .art-panel svg{position:relative;z-index:2;width:min(90%,460px);filter:drop-shadow(0 24px 25px rgba(35,78,49,.12))}
+    .art-label{position:absolute;z-index:3;right:25px;bottom:25px;padding:12px 16px;border:1px solid #e3e7d9;border-radius:14px;background:rgba(255,253,247,.9);color:var(--deep);font-size:.8rem;font-weight:750;line-height:1.5;box-shadow:0 8px 25px rgba(29,64,42,.06)}
+    .scroll-line{display:flex;align-items:center;gap:14px;margin-top:56px;color:#69806e;font-size:.69rem;font-weight:800;letter-spacing:.19em}
+    .scroll-line::after{content:"";width:80px;height:1px;background:#a8bba6}
+    .ribbon{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#eff2e8}
+    .ribbon-inner{display:flex;justify-content:space-between;align-items:center;gap:22px;min-height:83px}
+    .ribbon strong{color:var(--deep);font-size:.95rem}
+    .ribbon-items{display:flex;flex-wrap:wrap;gap:10px}
+    .ribbon-items span{padding:5px 12px;border:1px solid #cbdac6;border-radius:30px;color:#44694f;font-size:.78rem;font-weight:700}
+    .about-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(40px,7vw,130px)}
+    .about-title{position:relative}
+    .about-title h2{margin-bottom:25px}
+    .about-title .flower{display:grid;place-items:center;width:85px;height:85px;margin-top:52px;border:1px solid #c9d9c3;border-radius:50%;color:#7aa16c;font-size:2rem;transform:rotate(-15deg)}
+    .about-body{padding-top:6px}
+    .about-body .pullquote{margin:0 0 29px;padding-left:27px;border-left:3px solid var(--leaf);color:var(--deep);font-size:clamp(1.4rem,2.4vw,2rem);font-weight:750;line-height:1.55;letter-spacing:-.045em}
+    .about-body p{color:#56695b;line-height:2}
+    .about-points{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:32px}
+    .about-points span{display:flex;align-items:center;gap:12px;padding:13px 17px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--deep);font-size:.9rem;font-weight:750}
+    .about-points b{color:var(--green);font-size:1.15rem}
+    .fields{background:#ecf1e9}
+    .fields .section-head{display:flex;align-items:end;justify-content:space-between;gap:24px}
+    .fields .section-head h2{margin-bottom:0}
+    .fields .section-head .lead{max-width:435px;margin-bottom:2px}
+    .field-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+    .field-card{position:relative;min-height:285px;padding:29px 25px;border:1px solid #d7e3d2;border-radius:19px;background:var(--paper);overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}
+    .field-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .field-card::after{content:"";position:absolute;width:150px;height:150px;right:-48px;bottom:-55px;border:1px solid #e4e9db;border-radius:50%}
+    .field-card .number{display:block;margin-bottom:37px;color:#749776;font-family:Georgia,serif;font-size:1.13rem;font-style:italic}
+    .field-card h3{position:relative;z-index:1;margin-bottom:15px;color:var(--deep)}
+    .field-card p{position:relative;z-index:1;margin-bottom:0;color:#617266;font-size:.91rem;line-height:1.8}
+    .program-intro{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:37px}
+    .program-intro h2{margin-bottom:0}
+    .program-intro .lead{max-width:425px;margin-bottom:0}
+    .program-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+    .program-card{min-height:350px;padding:28px 25px;border:1px solid #e3e4d8;border-radius:19px;background:#fdfbf4}
+    .program-card:nth-child(2){background:#f0f4e9}
+    .program-card:nth-child(3){background:#f7f0e4}
+    .program-card:nth-child(4){background:#e9f0e9}
+    .program-icon{display:grid;place-items:center;width:55px;height:55px;margin-bottom:32px;border:1px solid #b9ccb6;border-radius:16px;background:rgba(255,255,255,.55);color:var(--deep);font-family:Georgia,serif;font-size:1.65rem}
+    .program-card small{display:block;margin-bottom:10px;color:var(--green);font-size:.72rem;font-weight:800;letter-spacing:.13em}
+    .program-card h3{margin-bottom:16px;color:var(--deep)}
+    .program-card p{margin-bottom:23px;color:#5c6d61;font-size:.9rem;line-height:1.85}
+    .program-card .tag{display:inline-block;padding:5px 12px;border:1px solid #cbdac6;border-radius:30px;color:#557558;font-size:.77rem;font-weight:700}
+    .program-note{margin:24px 0 0;color:#6b786d;font-size:.86rem}
+    .career{background:var(--deep);color:#fff}
+    .career .eyebrow{color:#bed9b4}
+    .career-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
+    .career h2{max-width:430px}
+    .career p{color:#d1dfd1}
+    .career-list{border-top:1px solid rgba(255,255,255,.22)}
+    .career-row{display:grid;grid-template-columns:45px 1fr auto;align-items:start;gap:18px;padding:25px 0;border-bottom:1px solid rgba(255,255,255,.22)}
+    .career-row span{color:#a7c7a3;font-family:Georgia,serif;font-style:italic}
+    .career-row strong{font-size:1.1rem}
+    .career-row small{color:#bad0ba;font-size:.8rem;text-align:right}
+    .credential-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px}
+    .book-card,.qual-card{border:1px solid #e1e4d8;border-radius:21px;background:var(--paper);overflow:hidden}
+    .book-card{display:grid;grid-template-columns:45% 55%;min-height:350px}
+    .book-visual{display:grid;place-items:center;background:#e5ece1}
+    .book-cover{display:flex;flex-direction:column;justify-content:space-between;width:160px;height:226px;padding:20px;background:#f7e9c8;box-shadow:11px 12px 0 #c5cbb0,0 14px 22px rgba(22,50,31,.16);transform:rotate(-7deg)}
+    .book-cover small{color:#606947;font-size:.65rem;font-weight:800;letter-spacing:.08em}
+    .book-cover strong{color:#27583c;font-size:1.62rem;line-height:1.3;letter-spacing:-.07em}
+    .book-cover .seed{align-self:end;color:#629662;font-size:3rem;line-height:1}
+    .book-copy{align-self:center;padding:27px}
+    .book-copy h3{font-size:1.7rem}
+    .book-copy p,.qual-card p{color:#617266;font-size:.9rem;line-height:1.9}
+    .qual-card{padding:35px}
+    .qual-card h3{margin-bottom:18px;color:var(--deep);font-size:1.65rem}
+    .qual-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+    .qual-list span{padding:9px 13px;border:1px solid #d1ddcd;border-radius:30px;background:#f5f8f1;color:#3c6248;font-size:.85rem;font-weight:750}
+    .contact{background:#e8eee3}
+    .contact-grid{display:grid;grid-template-columns:.87fr 1.13fr;gap:75px;align-items:start}
+    .contact h2{margin-bottom:25px}
+    .contact .lead{max-width:490px}
+    .contact-steps{display:grid;gap:15px;margin-top:36px;color:#486350;font-size:.89rem;font-weight:700}
+    .contact-steps div{display:flex;align-items:center;gap:12px}
+    .contact-steps span{display:grid;place-items:center;width:29px;height:29px;border:1px solid #adc5aa;border-radius:50%;font-family:Georgia,serif;font-style:italic}
+    .contact-form{padding:34px;border:1px solid #d9e3d5;border-radius:20px;background:var(--paper);box-shadow:var(--shadow)}
+    .contact-form h3{margin-bottom:8px;color:var(--deep)}
+    .contact-form>p{margin-bottom:25px;color:var(--muted);font-size:.9rem}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .field{margin-bottom:17px}
+    .field label{display:block;margin-bottom:7px;color:var(--deep);font-size:.86rem;font-weight:800}
+    .field input,.field select,.field textarea{display:block;width:100%;min-height:47px;padding:10px 13px;border:1px solid #ccd9c9;border-radius:9px;background:#fff;color:var(--ink);font-size:.9rem}
+    .field textarea{min-height:112px;resize:vertical}
+    .field input::placeholder,.field textarea::placeholder{color:#929d93}
+    .contact-form .button{width:100%;margin-top:2px}
+    .form-note{margin:12px 0 0;color:#6a786c;font-size:.78rem;line-height:1.7}
+    .form-status{min-height:1.7em;margin:10px 0 0;color:var(--green);font-size:.85rem;font-weight:750}
+    footer{padding:28px 0;background:#173c2c;color:#bed2bd}
+    .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:.78rem}
+    .footer-inner strong{color:#fff;font-size:.95rem}
+    @media(max-width:1100px){.nav{gap:13px}.nav a:not(.nav-cta){font-size:.82rem}.field-grid,.program-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.field-card{min-height:245px}.program-card{min-height:300px}}
+    @media(max-width:800px){html{scroll-padding-top:75px}.container{width:min(100% - 36px,620px)}.section{padding:78px 0}.header-inner{min-height:70px}.menu-toggle{display:flex}.nav{display:none;position:absolute;top:69px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:10px 18px 20px;border-bottom:1px solid var(--line);background:var(--cream);box-shadow:0 15px 22px rgba(25,60,42,.08)}.nav.open{display:flex}.nav a{padding:11px 14px}.nav-cta{text-align:center;margin-top:8px}.hero{padding:52px 0 70px}.hero-grid,.about-grid,.career-grid,.credential-grid,.contact-grid{grid-template-columns:1fr;gap:34px}.hero-copy{order:1}.art-panel{order:2;min-height:440px;max-width:520px;width:100%;margin-inline:auto}.scroll-line{display:none}.ribbon-inner{align-items:start;flex-direction:column;justify-content:center;padding:18px 0}.about-title .flower{display:none}.fields .section-head,.program-intro{align-items:start;flex-direction:column;gap:0}.fields .section-head .lead,.program-intro .lead{max-width:620px}.career-grid{gap:20px}.contact-grid{gap:25px}}
+    @media(max-width:560px){body{font-size:16px}.container{width:calc(100% - 32px)}.section{padding:66px 0}.hero{padding:42px 0 55px}.hero h1{font-size:clamp(2.4rem,10vw,3.6rem)}.hero-meta{margin-top:28px;flex-wrap:wrap;gap:8px}.hero-meta span+span::before{margin:0 10px 3px 0}.art-panel{min-height:340px;border-radius:180px 180px 20px 20px}.art-label{right:12px;bottom:12px;font-size:.68rem}.about-points,.field-grid,.program-grid{grid-template-columns:1fr}.field-card,.program-card{min-height:auto}.field-card .number{margin-bottom:25px}.program-icon{margin-bottom:22px}.career-row{grid-template-columns:32px 1fr;gap:10px}.career-row small{grid-column:2;text-align:left}.book-card{grid-template-columns:1fr}.book-visual{min-height:270px}.book-copy{padding:25px}.qual-card,.contact-form{padding:25px}.form-row{grid-template-columns:1fr;gap:0}.footer-inner{align-items:start;flex-direction:column;gap:3px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.field-card{transition:none}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 바로가기</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="한주영 강사 홈페이지 처음으로"><span class="brand-mark" aria-hidden="true">H</span><span>한주영<small>EDUCATOR</small></span></a>
+      <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav class="nav" id="primary-nav" aria-label="주요 메뉴">
+        <a href="#about">강사 소개</a><a href="#fields">전문 분야</a><a href="#programs">교육 프로그램</a><a href="#career">주요 경력</a><a href="#credentials">저서·자격</a><a class="nav-cta" href="#contact">강의 문의 ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">그림책 × 환경 × AI 리터러시</p>
+          <h1 id="hero-title">질문이 자라고,<br><em>이야기가</em><br>시작되는 수업</h1>
+          <p class="lead">그림책 한 권에서 질문을 시작하고 AI와 함께 새로운 이야기를 만듭니다. 일상의 작은 발견이 배움과 실천으로 이어지는 참여형 교육을 전합니다.</p>
+          <div class="hero-actions"><a class="button" href="#programs">교육 프로그램 보기 <span class="arrow" aria-hidden="true">↗</span></a><a class="button light" href="#contact">강의 문의 <span class="arrow" aria-hidden="true">↗</span></a></div>
+          <div class="hero-meta"><span>AI리터러시 강사 한주영</span><span>경기도 평택</span></div>
+          <div class="scroll-line" aria-hidden="true">DISCOVER MORE</div>
+        </div>
+        <div class="art-panel" role="img" aria-label="그림책에서 돋아난 나뭇잎과 새로운 생각을 표현한 일러스트">
+          <svg viewBox="0 0 480 460" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="248" cy="217" r="170" fill="#d8e4ce"/>
+            <circle cx="249" cy="212" r="143" fill="#e9efdf"/>
+            <path d="M235 280c-45-78-22-144 20-192" fill="none" stroke="#386b48" stroke-width="8" stroke-linecap="round"/>
+            <path d="M250 143c-42-31-61-17-64 11 31 16 50 12 64-11ZM227 199c-50-22-66-3-64 26 33 9 53 2 64-26ZM257 123c6-51 33-62 55-48-5 34-22 49-55 48ZM240 179c29-40 53-37 70-16-18 27-39 34-70 16Z" fill="#6b9b67"/>
+            <path d="M208 282c-18-50-5-76 13-90" fill="none" stroke="#7ca473" stroke-width="5" stroke-linecap="round"/>
+            <path d="M215 235c-29-20-45-8-45 13 20 10 35 6 45-13ZM220 219c5-29 21-35 37-26-5 19-16 28-37 26Z" fill="#9fbd86"/>
+            <path d="M106 305c51-43 103-46 137-24 34-22 86-19 137 24v100c-51-28-103-29-137-5-34-24-86-23-137 5V305Z" fill="#faf6e8" stroke="#2f6546" stroke-width="7" stroke-linejoin="round"/>
+            <path d="M243 281v118M121 319c45-28 84-28 105-18M121 345c45-23 84-22 105-11M365 319c-45-28-84-28-105-18M365 345c-45-23-84-22-105-11" fill="none" stroke="#b6c8a6" stroke-width="4" stroke-linecap="round"/>
+            <path d="M102 405c57-28 102-28 141-6 39-22 84-22 141 6" fill="none" stroke="#2f6546" stroke-width="7" stroke-linecap="round"/>
+            <circle cx="114" cy="166" r="8" fill="#d6a564"/><circle cx="347" cy="130" r="6" fill="#d6a564"/><circle cx="383" cy="218" r="10" fill="#b6cda6"/>
+            <path d="M109 119v21m-10-11h21M352 251v25m-12-12h25" stroke="#d3a262" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <div class="art-label">한 권의 책에서 시작하는<br>새로운 배움의 장면</div>
+        </div>
+      </div>
+    </section>
+    <div class="ribbon"><div class="container ribbon-inner"><strong>이야기를 나누고, 질문을 발견하고, 함께 실천합니다.</strong><div class="ribbon-items"><span>그림책</span><span>환경교육</span><span>AI리터러시</span><span>참여형 수업</span></div></div></div>
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-title"><p class="eyebrow">About the educator</p><h2 id="about-title">배움의 문을<br><span class="accent">함께 여는</span><br>강사, 한주영</h2><div class="flower" aria-hidden="true">✳</div></div>
+        <div class="about-body"><p class="pullquote">“누구나 자신의 경험으로 질문하고,<br>자신만의 이야기로 답할 수 있도록.”</p><p>한주영은 그림책의 친근한 이야기와 환경교육의 실천, AI 도구의 새로운 가능성을 연결합니다. 읽고, 이야기하고, 직접 만들어 보는 과정을 통해 참여자가 배움의 주인공이 되는 시간을 지향합니다.</p><p>경기도 평택을 기반으로 유아와 초등학생, 가족, 시니어의 눈높이에 맞는 교육을 소개합니다. 교육기관의 목적과 참여자의 특성에 맞춰 수업 주제와 활동을 함께 논의할 수 있습니다.</p><div class="about-points"><span><b aria-hidden="true">↗</b> 이야기에서 시작하는 질문</span><span><b aria-hidden="true">↗</b> 손으로 해 보는 참여 활동</span><span><b aria-hidden="true">↗</b> 일상으로 이어지는 실천</span><span><b aria-hidden="true">↗</b> 대상에 맞춘 교육 구성</span></div></div>
+      </div>
+    </section>
+    <section class="section fields" id="fields" aria-labelledby="fields-title">
+      <div class="container"><div class="section-head"><div><p class="eyebrow">Education fields</p><h2 id="fields-title">서로 이어지는<br>네 가지 교육 분야</h2></div><p class="lead">그림책의 감성과 AI의 가능성을 교육 현장의 질문과 연결합니다.</p></div>
+        <div class="field-grid">
+          <article class="field-card"><span class="number">01 / Picturebook</span><h3>그림책 환경교육</h3><p>그림책 속 자연과 생활 장면을 출발점으로 환경을 관찰하고, 일상에서 할 수 있는 실천을 생각합니다.</p></article>
+          <article class="field-card"><span class="number">02 / AI Literacy</span><h3>AI리터러시 교육</h3><p>AI를 이해하고 질문하며, 결과를 스스로 살펴보는 태도를 배우는 교육입니다.</p></article>
+          <article class="field-card"><span class="number">03 / Generative AI</span><h3>생성형 AI 활용교육</h3><p>생성형 AI 도구를 직접 사용하며 아이디어를 넓히고, 결과물을 자신의 관점으로 다듬어 봅니다.</p></article>
+          <article class="field-card"><span class="number">04 / Participation</span><h3>그림책 참여형 교육</h3><p>함께 읽고 이야기한 뒤 그리기, 만들기, 표현하기로 이어지는 참여 중심 수업입니다.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="programs" aria-labelledby="programs-title"><div class="container"><div class="program-intro"><div><p class="eyebrow">Programs by audience</p><h2 id="programs-title">대상에 맞게 만나는<br><span class="accent">배움의 방식</span></h2></div><p class="lead">교육 대상의 경험과 이해도에 맞춰 그림책, 환경, AI 활동을 조합합니다.</p></div>
+      <div class="program-grid">
+        <article class="program-card"><div class="program-icon" aria-hidden="true">✿</div><small>01 · 유아</small><h3>그림으로 만나고<br>몸으로 표현하기</h3><p>그림책을 함께 보고 자연의 색과 모양을 찾으며 놀이처럼 이야기를 나눕니다.</p><span class="tag">그림책 · 관찰 · 표현</span></article>
+        <article class="program-card"><div class="program-icon" aria-hidden="true">✎</div><small>02 · 초등학생</small><h3>질문하고 만드는<br>나만의 이야기</h3><p>환경을 주제로 질문을 만들고, 그림책과 AI 도구를 활용해 생각을 표현합니다.</p><span class="tag">환경 · 질문 · 창작</span></article>
+        <article class="program-card"><div class="program-icon" aria-hidden="true">♡</div><small>03 · 가족</small><h3>함께 읽고 함께<br>실천하는 시간</h3><p>가족이 같은 이야기를 읽고 대화하며 집에서 이어갈 수 있는 환경 실천을 찾아봅니다.</p><span class="tag">대화 · 공감 · 실천</span></article>
+        <article class="program-card"><div class="program-icon" aria-hidden="true">❋</div><small>04 · 시니어</small><h3>내 경험을 담은<br>새로운 이야기</h3><p>친근한 그림책에서 기억을 꺼내고, 쉬운 AI 활용 활동으로 생각을 나눕니다.</p><span class="tag">회상 · 이야기 · AI 입문</span></article>
+      </div><p class="program-note">※ 위 내용은 교육 주제 안내입니다. 실제 수업 구성과 난이도는 기관의 요청에 맞춰 협의합니다.</p>
+    </div></section>
+    <section class="section career" id="career" aria-labelledby="career-title"><div class="container career-grid"><div><p class="eyebrow">Experience & practice</p><h2 id="career-title">교육 현장을<br>잇는 활동</h2><p>확인된 강사 활동 분야를 소개합니다. 세부 강의 이력은 문의 시 확인해 주세요.</p></div><div class="career-list"><div class="career-row"><span>01</span><strong>환경교육 강사</strong><small>환경과 일상 실천</small></div><div class="career-row"><span>02</span><strong>장애인 평생교육강사</strong><small>참여자의 특성을 고려한 배움</small></div><div class="career-row"><span>03</span><strong>그림책읽기강사</strong><small>이야기로 시작하는 소통</small></div><div class="career-row"><span>04</span><strong>한국어강사 · 사회복지사</strong><small>언어와 사람을 잇는 전문성</small></div></div></div></section>
+    <section class="section" id="credentials" aria-labelledby="credentials-title"><div class="container"><div class="section-head"><p class="eyebrow">Book & qualifications</p><h2 id="credentials-title">책으로 전하는 실천,<br><span class="accent">자격으로 쌓은 전문성</span></h2></div><div class="credential-grid"><article class="book-card"><div class="book-visual" aria-hidden="true"><div class="book-cover"><small>한주영 저서</small><strong>나도<br>환경실천가!</strong><span class="seed">❧</span></div></div><div class="book-copy"><p class="eyebrow">Published book</p><h3>《나도 환경실천가!》</h3><p>한주영 강사의 저서입니다. 책과 연계한 교육 구성은 문의 시 함께 상의할 수 있습니다.</p></div></article><article class="qual-card"><p class="eyebrow">Professional background</p><h3>자격 및 전문분야</h3><p>교육 대상에 대한 이해와 다양한 분야의 전문성을 바탕으로 수업을 구성합니다.</p><div class="qual-list"><span>환경교육 강사</span><span>장애인 평생교육강사</span><span>그림책읽기강사</span><span>한국어강사</span><span>사회복지사</span></div></article></div></div></section>
+    <section class="section contact" id="contact" aria-labelledby="contact-title"><div class="container contact-grid"><div><p class="eyebrow">Lecture inquiry</p><h2 id="contact-title">우리 기관에 맞는<br><span class="accent">배움을 이야기해요.</span></h2><p class="lead">교육 대상과 원하는 주제를 알려주시면 수업 방향을 함께 살펴볼 수 있습니다.</p><div class="contact-steps"><div><span>1</span> 교육 대상과 인원을 알려주세요</div><div><span>2</span> 희망 주제와 일정을 적어주세요</div><div><span>3</span> 강의 문의 버튼으로 내용을 보내주세요</div></div></div><form class="contact-form" id="inquiry-form"><h3>강의 문의</h3><p>필요한 내용을 적으면 이메일 문의 문안이 준비됩니다.</p><div class="form-row"><div class="field"><label for="organization">기관명</label><input id="organization" name="organization" autocomplete="organization" required placeholder="기관명을 입력해 주세요"></div><div class="field"><label for="sender">담당자 성함</label><input id="sender" name="sender" autocomplete="name" required placeholder="성함을 입력해 주세요"></div></div><div class="form-row"><div class="field"><label for="reply">회신받을 이메일</label><input id="reply" name="reply" type="email" autocomplete="email" required placeholder="이메일을 입력해 주세요"></div><div class="field"><label for="audience">교육 대상</label><select id="audience" name="audience" required><option value="">선택해 주세요</option><option>유아</option><option>초등학생</option><option>가족</option><option>시니어</option><option>기타</option></select></div></div><div class="field"><label for="message">희망 주제·일정·인원</label><textarea id="message" name="message" required placeholder="원하는 교육 주제와 일정, 예상 인원 등을 적어 주세요"></textarea></div><button class="button" type="submit">강의 문의 <span class="arrow" aria-hidden="true">↗</span></button><p class="form-note">작성한 내용은 이 페이지에 저장되지 않습니다. 버튼을 누르면 기본 이메일 앱으로 이동합니다.</p><p class="form-status" id="form-status" role="status" aria-live="polite"></p></form></div></section>
+  </main>
+  <footer><div class="container footer-inner"><strong>한주영 · 그림책과 AI로 여는 배움</strong><span>경기도 평택 · © <span id="year">2026</span> Han Ju Young</span></div></footer>
+  <script>
+    const menuButton=document.querySelector('.menu-toggle');
+    const menu=document.querySelector('#primary-nav');
+    menuButton.addEventListener('click',()=>{const open=menu.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'메뉴 닫기':'메뉴 열기');menuButton.textContent=open?'×':'☰'});
+    menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{menu.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','메뉴 열기');menuButton.textContent='☰'}));
+    document.querySelector('#year').textContent=new Date().getFullYear();
+    document.querySelector('#inquiry-form').addEventListener('submit',event=>{
+      event.preventDefault();
+      const form=event.currentTarget;
+      if(!form.reportValidity())return;
+      const data=new FormData(form);
+      const subject=`[강의 문의] ${data.get('organization')} · ${data.get('audience')}`;
+      const body=`기관명: ${data.get('organization')}\n담당자: ${data.get('sender')}\n회신 이메일: ${data.get('reply')}\n교육 대상: ${data.get('audience')}\n\n희망 주제·일정·인원:\n${data.get('message')}`;
+      const email='';
+      const status=document.querySelector('#form-status');
+      if(email){window.location.href=`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;status.textContent='이메일 앱에서 받는 사람과 내용을 확인한 뒤 전송해 주세요.'}
+      else{const text=`${subject}\n\n${body}`;navigator.clipboard.writeText(text).then(()=>{status.textContent='문의 내용이 복사되었습니다. 사용 중인 연락 채널에 붙여넣어 보내 주세요.'}).catch(()=>{status.textContent='문의 내용을 복사할 수 없습니다. 입력하신 내용을 직접 복사해 주세요.'})}
+    });
+  </script>
+</body>
+</html>
